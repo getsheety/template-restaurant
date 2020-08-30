@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Blandos</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="main.js"></script>
+<script id="menu-template" type="text/x-handlebars-template">
+	<div class="text-center p-2">
+		<h1 class="display-4">Blandos Menu</h1>
+		<p class="lead">Checkout our delicious range of bland chicken!</p>
+	</div>
+	{{#each this as |category|}}
+		<div class="category p-5 mb-5">
+			<div class="row">
+				<div class="col-lg">
+					<h1 class="mb-4">{{@key}}</h1>
+				</div>
+			</div>
+			<div class="row">
+				{{#each this as |item|}}
+					<div class="col-md-4 d-flex align-items-center mb-4">
+						<h4>{{item.item}}</h4>
+						{{#if item.isVegetarian}}
+							<div class="v">V</div>
+						{{/if}}
+						<h6 class="ml-auto">&pound;{{item.price}}</h6>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	{{/each}}
+</script>
+</head>
+<body>
+<div class="container" id="menu">Loading menu...</div>
+</body>
+</html>
