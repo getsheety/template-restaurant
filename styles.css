@@ -1,39 +1,29 @@
+
 body {
-	background-color: #FAF9F6;
-	font-family: 'Open Sans Condensed', sans-serif;
-	padding-top: 5em;
-	padding-bottom: 5em;
-	border-top: 10px solid #FFCE42;
+	font: system-ui, sans-serif;
+	padding: 2em 0em;
+	border-top: 10px solid #F7CF5E;
 }
 
-h1, h2 {
-	font-family: 'Chango', cursive;
+.price {
+	font-weight: bold; 
 }
 
-.lead {
-	font-size: 2em;
+.logo {
+	font-size: 5em;
+	font-family: 'Pacifico', cursive;
+	color: #BD292C;
+	text-shadow: #F7CF5E 5px 5px 0px;
+	transform: rotateZ(-4deg);
+	display: block;
 }
 
-.category {
-	border: 5px solid #FFCE42;
-	background-color: #FFF;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 40px;
+.logo span {
+	font-family: system-ui, sans-serif;
 }
 
-.category:nth-child(2) {
-	border-color: #F49C00;
-}
-
-.category:nth-child(3) {
-	border-color: #02A598;
-}
-
-.category:nth-child(4) {
-	border-color: #EC5D56;
-}
-
-.category:nth-child(5) {
-	border-color: #9DBF1A;
+h3 {
+	font-family: 'Pacifico', cursive;
 }
 
 .v {

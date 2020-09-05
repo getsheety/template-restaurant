@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 })
 
 function ready() {
-	let url = 'http://localhost:3000/rest/22b423a332259b6ac6c4e1152a20002e/restaurant/menu';
+	let url = 'https://api.sheety.co/phill/cluckerRestaurant/menu';
 	fetch(url)
 	.then((response) => response.json())
 	.then(json => {
